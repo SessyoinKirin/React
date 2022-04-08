@@ -1,17 +1,29 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from 'react'
+//从react的包当中引入了React。只要你要写react.js组件就必须引入React，因为react里有一种语法叫jsx
+import ReactDom from 'react-dom'
+//ReactDom可以帮助我们把React组件熏染到页面上去
+import App from './01-base/04-modelodeComponente'
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+// ReactDom.render(<div>
+//     <b>111111111212</b>
+//     <ul>
+//         <li>12313</li> 
+//         <li>12313</li> 
+//         <li>12313</li> 
+//         <li>12313</li> 
+//         <li>12313</li> 
+//         <li>12313</li> 
+//     </ul>
+//     </div>, document.getElementById("root"))
+
+// ReactDom.render(React.createElement("div",{
+//     id:"aaa",
+//     class:"bbb"
+// },"11111111"),document.getElementById("root"))
+
+ReactDom.render(<App/>,document.getElementById("root"))
+
+/* 
+jsx = js + xml
+*/
