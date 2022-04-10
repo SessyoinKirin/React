@@ -21,6 +21,7 @@ export default class App extends Component {
             <div style={{background: "yellow"}}>
                 114514
             </div>
+            {/* React推荐使用行内样式，因为每一个组件都是一个独立的整体 */}
             <div className="active">
                 114514
             </div>
