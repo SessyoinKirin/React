@@ -2,7 +2,7 @@ import React from 'react'
 //从react的包当中引入了React。只要你要写react.js组件就必须引入React，因为react里有一种语法叫jsx
 import ReactDom from 'react-dom'
 //ReactDom可以帮助我们把React组件熏染到页面上去
-import App from './01-base/06-ligacaodeEventos'
+import App from './01-base/10-todolist'
 
 
 // ReactDom.render(<div>
@@ -22,7 +22,14 @@ import App from './01-base/06-ligacaodeEventos'
 //     class:"bbb"
 // },"11111111"),document.getElementById("root"))
 
-ReactDom.render(<App/>,document.getElementById("root"))
+ReactDom.render(
+    // <React.StrictMode>
+        <App/>
+    // </React.StrictMode>
+    ,document.getElementById("root"))
+
+//Entre <App> está React.StrictMode, mas tem b.o
+
 
 /* 
 jsx = js + xml
