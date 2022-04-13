@@ -36,6 +36,11 @@ export default class App extends Component {
                 )
             }
         </ul>
+        {/* {this.state.list.length === 0?<div>Sem elementos</div>:null} */}
+
+        {this.state.list.length ===0 && <div>Sem elementos</div>}
+
+        
       </div>
     )
   }
@@ -56,6 +61,9 @@ export default class App extends Component {
       this.setState({
           list:newlist
       })
+
+      //zera input
+      this.myref.current.value = ""
   }
   handelclick=(index)=>{
       console.log("Delete",index)
