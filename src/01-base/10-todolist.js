@@ -29,7 +29,12 @@ export default class App extends Component {
             {
                 this.state.list.map((item,index)=>
                     <li key={item.id}>
-                        {item.text}
+                        {/* {item.text} */}
+                        <span dangerouslySetInnerHTML={
+                            {
+                                __html:item.text
+                            }
+                        }></span>
                         {/* <button onClick={this.handelclick.bind(this,index)}>del</button> */}
                         <button onClick={()=>this.handelclick(index)}>del</button>
                     </li>
