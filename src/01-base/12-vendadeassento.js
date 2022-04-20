@@ -18,6 +18,7 @@ export default class App extends Component {
             {
                 id: 3,
                 text:"eu"
+                // nada
             },
         ],
         current:0
