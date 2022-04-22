@@ -27,6 +27,8 @@ export default class Cinema extends Component {
         cinemaList: res.data.data.cinemas,
         bakcinemaList: res.data.data.cinemas
       })
+
+      console.log(this.state.cinemaList)
     })
   }
 
@@ -58,7 +60,7 @@ export default class Cinema extends Component {
         cinemaList: newlist
       })
       //vai sobreescrita o cinemalist...
-
+      console.log(this.state.cinemaList)
     }
 }
 
