@@ -12,9 +12,14 @@ static propTypes = {
   title: PropType.string,
     leftshow: PropType.bool
 }
+
+static defaultProps = {
+  leftshow: true
+}
   render() {
     //   console.log(this.props)
       let{title, leftshow} = this.props
+      console.log(this.props)
     return (
       <div>
           {leftshow && <button>voltar</button>}
@@ -24,6 +29,10 @@ static propTypes = {
     )
   }
 }
+
+// Navbar.defaultProps = {
+//   leftshow: true
+// }
 
 class Test {
   a =1

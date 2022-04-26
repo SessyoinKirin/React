@@ -6,6 +6,12 @@ export default class App extends Component {
     
 
   render() {
+
+    var obj = {
+      title:"Teste",
+      leftshow:false
+    }
+
     return (
       <div>
           <div>
@@ -14,11 +20,12 @@ export default class App extends Component {
           </div>
           <div>
               <h2>Lista</h2>
-              <Navbar title="lista" leftshow={true}/>
+              <Navbar title="lista"/>
           </div>
           <div>
               <h3>Carrinho</h3>
-              <Navbar title="carrinho" leftshow={true}/>
+              <Navbar{...obj}></Navbar>
+              <Navbar title={obj.title} leftshow={obj.leftshow}/>
           </div>
           
       </div>
